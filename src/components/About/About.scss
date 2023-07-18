@@ -1,51 +1,80 @@
 .aboutSection {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #ffffff;
-    padding: 2rem;
-    margin-top: 5rem;
-    padding-bottom: 5rem;
-    gap: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 100vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  
-    .leftSection {
-      flex: 0 0 35%;
-  
-      img {
-        width: 100%;
-        border-radius: 5px;
-      }
+  .leftSection {
+    flex: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
     }
-  
+  }
+
+  .rightSection {
+    flex: 1;
+    padding: 0 1rem;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+
+    .sectionTitle {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.4rem;
+      color: #14c7ca;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    .mainHeading {
+      font-family: 'Manrope', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #292727;
+      margin-bottom: 1rem;
+      line-height: 3rem;
+      text-align: left;
+    }
+
+    .subHeading {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    .leftSection{
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+
+    }
+
     .rightSection {
-      flex: 0 0 35%;
-      padding-left: 2rem;
-  
-      .sectionTitle {
-        font-family: 'Manrope', sans-serif;
-        font-size: 1.4rem;
-        color: #14c7ca;
-        margin-bottom: 1rem;
-      }
-  
-      .mainHeading {
-        font-family: 'Manrope', sans-serif;
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #292727;
-        margin-bottom: 1rem;
-        line-height: 3rem;
-      }
-  
-      .subHeading {
-        font-family: 'Manrope', sans-serif;
-        font-size: 1.1rem;
-        // color: #e8fbfb;
-        line-height: 1.4;
-        font-weight: 400;
+      text-align: left;
+      position: relative;
+
+      .sectionTitle{
+        margin-top: 2rem !important;
       }
     }
   }
-  
+}

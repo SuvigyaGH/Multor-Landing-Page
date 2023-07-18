@@ -1,12 +1,10 @@
 .heroSection {
-  background-image: url("../../assets/2.jpg");
-
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("../../assets/2.jpg");
   background-size: cover;
   background-position: center;
   height: 70vh;
   display: flex;
   align-items: center;
-//   border: 1px solid red;
   font-family: Manrope, sans-serif;
 
   .container {
@@ -15,45 +13,72 @@
     gap: 2rem;
     padding: 0 1rem;
     margin-left: 10%;
-    // border: 1px solid green;
     z-index: 20;
     max-width: 50vw;
-    color: #152f2e;
-    
 
     .companyName {
       font-size: 2rem;
       font-weight: bolder;
-      color: #152f2e;
+      color: #ffffff;
       margin-bottom: 1rem;
-    //   border: 1px solid yellow;
-      font-size: 2rem;
-      font-family: Manrope, sans-serif;
       font-style: italic;
+      background-image: linear-gradient(to right, #ffffff, #c4f6fc);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Manrope, sans-serif;
+      
     }
 
     .description {
-      font-weight: 800;
+      font-weight: 700;
       color: #ffffff;
       line-height: 1.1;
       margin-bottom: 1.5rem;
-    //   border: 1px solid blue;
-      color: #152f2e;
-      font-weight: 600;
       font-size: 3.2rem;
       max-width: 40vw;
-
+      background-image: linear-gradient(to right, #ffffff, #ccccf8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Manrope, sans-serif;
     }
 
     .additionalText {
       font-size: 1.2rem;
       line-height: 1.2;
       color: #ffffff;
-    //   border: 1px solid purple;
-      color: #152f2e;
       font-weight: 500;
       max-width: 32vw;
+      background-image: linear-gradient(to right, #ffffff, #b9bafd);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Manrope, sans-serif;
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 2rem;
+    text-align: left;
+    
+    .container {
+      max-width: 100%;
+      margin-bottom: 1rem;
+      position: relative;
+      right: 2.5rem;
+      
+      .description {
+        font-size: 2rem;
+        max-width: none;
+      }
+      
+      .additionalText {
+        max-width: none;
 
+      }
     }
   }
 }
