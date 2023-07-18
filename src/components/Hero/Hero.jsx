@@ -7,7 +7,6 @@ const Hero = () => {
   return (
 
     <div className="heroSection">
-      {/* <img src={Girl} alt="" /> */}
       <div className="container">
         <h6 className="companyName">MultOr</h6>
         <h1 className="description">Bring the value of booking an appointment.</h1>
