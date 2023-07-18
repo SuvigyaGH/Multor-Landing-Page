@@ -1,0 +1,67 @@
+.visitorsSection {
+  background-color: #e8fbfb;
+  padding: 2rem;
+  font-family: Manrope, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  max-height: 90vh;
+
+  .content {
+    text-align: center;
+    color: #152f2e;
+
+    .mainHeading {
+      display: flex;
+      justify-content: center;
+      font-size: 2.4rem;
+      text-align: center;
+      line-height: 3rem;
+      font-weight: 700;
+      margin: 4rem 20rem 1rem 20rem ; 
+    }
+    
+    .subHeading {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      margin: 3rem 18rem 5rem 18rem ; 
+
+    }
+
+    .videoWrapper {
+      position: relative;
+      display: inline-block;
+      max-width:60vw;
+      margin: 0 12rem 0 12rem;
+    
+      img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 5px;
+      }
+    
+      
+    .playButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: #ffffff;
+      color: #152f2e;
+      background-color: #e8fafb;
+      border: 1px solid gray;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.674);
+    }
+    }
+    
+  }
+  
+  
+}

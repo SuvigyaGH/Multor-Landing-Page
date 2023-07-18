@@ -31,29 +31,49 @@ const Benefits = () => {
     });
   };
 
+  const handleCrossClick = () => {
+    setFormValues({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      appointmentType: "",
+    });
+    setShowModal(false);
+  };
+
   return (
     <div className="benefitsSection">
       <div className="leftSection">
         <div className="benefitRows">
           <div className="benefitRowColumn">
-              <Image className="images" src={Tv} alt="Benefit 1" />
+            <Image className="images" src={Tv} alt="Benefit 1" />
             <div className="benefitRowText">
               <h3>Benefit 1 Heading</h3>
-              <p>Highlight the benefits of signing up for an appointment, online class, or video consultation.</p>
+              <p>
+                Highlight the benefits of signing up for an appointment, online
+                class, or video consultation.
+              </p>
             </div>
           </div>
           <div className="benefitRowColumn">
-              <Image className="images" src={Heart} alt="Benefit 2" />
+            <Image className="images" src={Heart} alt="Benefit 2" />
             <div className="benefitRowText">
-              <h3>Benefit 2  Heading</h3>
-              <p>For example, fitness instructors might describe how their routines make people healthier *and* happier.</p>
+              <h3>Benefit 2 Heading</h3>
+              <p>
+                For example, fitness instructors might describe how their
+                routines make people healthier *and* happier.
+              </p>
             </div>
           </div>
           <div className="benefitRowColumn">
-              <Image className="images" src={Award} alt="Benefit 3" />
+            <Image className="images" src={Award} alt="Benefit 3" />
             <div className="benefitRowText">
               <h3>Benefit 3 Heading</h3>
-              <p>Remind visitors how easy it is to claim your offer and start enjoying the benefits.</p>
+              <p>
+                Remind visitors how easy it is to claim your offer and start
+                enjoying the benefits.
+              </p>
             </div>
           </div>
         </div>
@@ -106,12 +126,23 @@ const Benefits = () => {
               <option value="type2">Type 2</option>
               <option value="type3">Type 3</option>
             </select>
-            <button type="submit">Schedule Now</button>
+            <button type="submit" disabled={!formValues.firstName || !formValues.lastName || !formValues.email || !formValues.phoneNumber || !formValues.appointmentType}>
+  Schedule Now
+</button>
           </div>
 
           {showModal && (
             <div className="modal">
-              <p>Thank you for scheduling your appointment!</p>
+              <button
+                className="modalClose"
+                onClick={handleCrossClick}
+              >
+                &times;
+              </button>
+              <p>
+                Thank you! We&apos;ll reach out to schedule your appointment
+                shortly!
+              </p>
             </div>
           )}
         </form>

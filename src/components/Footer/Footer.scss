@@ -1,0 +1,27 @@
+.footer {
+    background-color: #152f2e;
+    color: #cec8c8;
+    padding: 2.5rem 0;
+  
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 15rem;
+    }
+  
+    .leftSection {
+      .companyName {
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+  
+    .rightSection {
+      .copyright {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
