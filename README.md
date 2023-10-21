@@ -12,7 +12,7 @@ https://github.com/SuvigyaGH/Multor-Landing-Page/assets/60514660/5c638b62-076e-4
 
 
 To run the code, either clone it or open the ZIP of the codebase and install the necessary dependenices like tailwindCSS and Sass using npm install. 
-After successful installation, run this NextJS project via the termial using the command 'npm run dev'
+After successful installation, run this NextJS project via the terminal using the command 'npm run dev'
 
 
 Boiler NextJS Starter Templete below.
