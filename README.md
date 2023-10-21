@@ -7,9 +7,7 @@ https://multor-landing-page-two.vercel.app/
 Demo Video:
 https://clipchamp.com/watch/Ura9au8fDoH
 
-
 https://github.com/SuvigyaGH/Multor-Landing-Page/assets/60514660/5c638b62-076e-4eed-b6eb-6f5be6034f6e
-
 
 To run the code, either clone it or open the ZIP of the codebase and install the necessary dependenices like tailwindCSS and Sass using npm install. 
 After successful installation, run this NextJS project via the terminal using the command 'npm run dev'
